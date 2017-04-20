@@ -1,6 +1,6 @@
-name: MCNA Google Places
+name: GPlaces
 type: module
 description: 'Implementation of Google Places API for Drupal'
-package: Development
+package: MCNA
 core: 8.x
-configure: mcna_gplaces.form
+configure: gplaces.form
