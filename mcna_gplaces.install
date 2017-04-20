@@ -9,6 +9,6 @@ use Drupal\user\RoleInterface;
  */
 function mcna_gplaces_install() {
     user_role_change_permissions(RoleInterface::ANONYMOUS_ID, array(
-        'MCNA Google Places' => TRUE,
+        'mcna google places' => TRUE,
     ));
 }
