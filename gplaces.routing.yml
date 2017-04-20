@@ -1,0 +1,13 @@
+gplaces.search:
+  path: 'gplaces/search'
+  defaults:
+    _controller: '\Drupal\gplaces\Controller\GPlacesController::search'
+  requirements:
+    _permission: 'mcna google places'
+gplaces.form:
+  path: '/admin/config/development/gplaces'
+  defaults:
+    _form: 'Drupal\gplaces\Form\GPlacesForm'
+    _title: 'Google Places settings'
+  requirements:
+    _permission: 'administer site configuration'
