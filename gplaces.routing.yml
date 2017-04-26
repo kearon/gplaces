@@ -1,5 +1,5 @@
 gplaces.search:
-  path: 'gplaces/search/{searchstr}'
+  path: 'gplaces/search/{searchstr} '
   defaults:
     _controller: '\Drupal\gplaces\Controller\GPlacesController::search'
   requirements:
