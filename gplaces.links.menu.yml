@@ -1,0 +1,5 @@
+gplaces.form:
+  title: 'Google Places settings'
+  description: 'Configure settings for the GPlaces module.'
+  route_name: gplaces.form
+  parent: 'system.admin_config_development'
