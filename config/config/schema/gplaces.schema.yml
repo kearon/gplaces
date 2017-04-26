@@ -13,6 +13,6 @@ gplaces.settings:
           label: 'Google Places API key:'
 block.settings.gplaces_block:
   type: block_settings
-  label: 'Gplaces block'
+  label: 'GPlaces block'
   mapping:
     gplaces_block_settings:

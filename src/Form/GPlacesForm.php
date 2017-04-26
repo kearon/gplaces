@@ -26,7 +26,7 @@ class GPlacesForm extends ConfigFormBase {
             '#description' => $this->t('Give your Google Places Results page a title.'),
         );
         // Source text field.
-        $form['source_text'] = array(
+        $form['google_places_api_key'] = array(
             '#type' => 'textfield',
             '#title' => $this->t('Google Places API Key:'),
             '#default_value' => $config->get('gplaces.google_places_api_key'),
