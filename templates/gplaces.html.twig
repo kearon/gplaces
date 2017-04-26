@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Default theme implementation to print GPlaces results text.
+ *
+ * Available variables:
+ *   - search_results
+ *
+ * @see template_preprocess_gplaces()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="gplaces">
+    {% for item in search_results %}
+        <p>{{ item }}</p>
+    {% endfor %}
+</div>

@@ -27,3 +27,30 @@ function gplaces_help($route_name, RouteMatchInterface $route_match) {
     }
     return t($helptxt);
 }
+
+/**
+ * Implements hook_theme().
+ * this is to associate a twig template with the variable for display
+ */
+function gplaces_theme($existing, $type, $theme, $path) {
+    $variables = array(
+        'gplaces' => array(
+            'variables' => array(
+                'search_results' => NULL,
+            ),
+            'template' => 'gplaces',
+        ),
+    );
+    return $variables;
+}
+
+/**
+ * Template preprocess function for GPlaces
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - sseach_results
+ */
+function template_preprocess_gplaces(&$variables) {
+   // This is where I would do any preprocessing of variables before passing to TWIG
+}
