@@ -7,7 +7,7 @@ gplaces.settings:
       mapping:
         page_title:
           type: text
-          label: 'GPlaces Search page title:'
+          label: 'GPlaces Results page title:'
         google_places_api_key:
           type: text
           label: 'Google Places API key:'
