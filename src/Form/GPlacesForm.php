@@ -43,9 +43,9 @@ class GPlacesForm extends ConfigFormBase {
      * {@inheritdoc}
      */
     public function submitForm(array &$form, FormStateInterface $form_state) {
-        $config = $this->config('loremipsum.settings');
-        $config->set('loremipsum.source_text', $form_state->getValue('source_text'));
-        $config->set('loremipsum.page_title', $form_state->getValue('page_title'));
+        $config = $this->config('gplaces.settings');
+        $config->set('gplaces.google_places_api_key', $form_state->getValue('google_places_api_key'));
+        $config->set('gplaces.page_title', $form_state->getValue('page_title'));
         $config->save();
         return parent::submitForm($form, $form_state);
     }
@@ -54,7 +54,7 @@ class GPlacesForm extends ConfigFormBase {
      */
     protected function getEditableConfigNames() {
         return [
-            'loremipsum.settings',
+            'gplaces.settings',
         ];
     }
 }
