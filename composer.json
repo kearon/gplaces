@@ -1,0 +1,32 @@
+{
+  "name":        "mcna/gplaces",
+  "description": "Drupal 8 Module that makes the methods from Joshtronics PHP Wrapper for the Google Places API available",
+  "version":     "0.0.1",
+  "type":        "library",
+  "keywords":    ["google", "places", "api"],
+  "homepage":    "https://github.com/kearon/gplaces",
+  "license":     "MIT",
+  "authors": [{
+    "name":     "Kearon McNicol",
+    "homepage": "https://github.com/kearon"
+  }],
+  "require": {
+    "joshtronic/php-googleplaces": ">=1.0.0"
+  },
+  "extra": {
+    "merge-plugin": {
+      "include": [
+        "vendor/joshtronic/composer.json"
+      ],
+      "recurse": false,
+      "replace": false,
+      "merge-extra": false
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "MCNA\\GPlaces\\": "src/",
+      "joshtronic\\": "src/"
+    }
+  }
+}
