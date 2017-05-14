@@ -2,7 +2,7 @@
   "name":        "mcna/gplaces",
   "description": "Drupal 8 Module that makes the methods from Joshtronics PHP Wrapper for the Google Places API available",
   "version":     "0.0.1",
-  "type":        "library",
+  "type":        "drupal-module",
   "keywords":    ["google", "places", "api"],
   "homepage":    "https://github.com/kearon/gplaces",
   "license":     "MIT",
